@@ -82,7 +82,7 @@
 
 
 /* スマホ */
-@media(max-width: 380px){
+@media(max-width: px){
     .section1 {
         width: 100%;
     }
