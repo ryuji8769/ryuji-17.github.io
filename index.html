@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="res.css">
+   <script src="jquery-3.6.0.minのコピー.js"></script>
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="header">
+                <a href="https://twitter.com/supreme_ryuji"><img src="img/hoto9.png"></a>
+                <a href="https://twitter.com/supreme_ryuji"><i class="fab fa-twitter-square fa-3x"></i></a>
+            </div>
+                <!-- ナビ -->
+            <nav class="gnav">
+                <ul>
+                    <li><a href="#abc">自己紹介</a></li>
+                    <li><a href="#abc1">スキル</a></li>
+                    <li><a href="#abc2">制作実績</a></li>
+                    <li><a href="https://twitter.com/supreme_ryuji">連絡</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <div class="main1">
+            <div class="loop_wrap">
+                <img src="img/hoto11.png"><img src="img/hotot.png">
+              </div>
+               
+            </div>
+        </div>
+        <!-- セクション１ -->
+        <div class="section1">
+            <h1 id="abc">自己紹介</h1>
+            <div class="profil">
+                <img src="img/IMG2.png" alt="プロフィール画像">
+                <p>名前：福元　竜司　(21)</br>
+
+                </br>出身：福岡県</br>
+            </br>プログラミング経験　４ヶ月　案件をまだ受けた事が無いです。</br>
+        </br>今は、工場で働きながらプログラミングの勉強をしています。</br>
+                    いつかはプログラミングだけで食って行ける様に成りたいと思っています。</br>
+                    実際にプログラミングを勉強し始めて、正直とても難しいですが、出来なかった課題が出来る様に成ると、それまでの苦労が全て吹き飛びます。</br>
+                    プログラミングの面白い所は、１つの課題が出来ても直ぐにまた新たな課題が出て来る所です。</br>
+                    常に挑戦し続ける気持ちを忘れず、これからも精進していきます。</p>
+            </div>
+        </div>
+        <!-- セクション２ -->
+        <div class="section2">
+            <h2 id="abc1">スキル</h2>
+            <div class="sikil">
+                <div class="sikil1">
+                    <h3>コーディング</h3>
+                    <p>自分が自信を持って出来るプログラミング言語は、HTMLとCSSです。</br>
+                    </br>基本的な事は、問題無く出来ます。</br>
+                </br>また、jQueryを使って、ナビゲーションメニューとハンバーガーアイコンを作る事が出来ます。</p>
+                </div>
+                    <div class="sikil2"><img src="img/hoto10.png"></div>
+            </div>
+          
+            <div class="sikil">
+                <div class="sikil1">
+                    <h3>レスポンシブデザイン</h3>
+                    <p>PC用のWebサイトをスマホ表示、タブレット表示にする事が出来ます。</br>
+                    </br>自分の中でレスポンシブデザインは、得意分野なので自信を持っています。</p>
+                </div>
+                <div class="sikil3"><img src="img/hoto6.png"></div>
+            </div>
+        </div>
+        <!-- セクション３ -->
+        <div class="section3">
+            <h4 id="abc2">制作実績</h4>
+            <div class="works">
+                <div class="works1">
+                    <a href="file:///Users/fukumotoryuuji/Desktop/模写コーディング完成/模写コーディング３レスポンシブ１/photo.html"><img src="img/hoto7.png"></a>
+                    <ul>
+                        <li>作成日：５月９日</li>
+                        <li>内容　：レスポンシブデザイン</li>
+                    </ul>
+                </div>
+
+                <div class="works1">
+                    <a href="file:///Users/fukumotoryuuji/Desktop/模写コーディング完成/コーディング/tpl_093/index.html"><img src="img/hoto8.png"></a>
+                    <li>作成日：５月11日</li>
+                    <li>内容　：レスポンシブデザイン</li>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://twitter.com/supreme_ryuji" class="btn btn-custom01">
+                <span class="btn-custom01-front">PUSH</span>
+                <i class="fas fa-angle-right fa-position-right"></i>
+              </a>
+            <p>制作の依頼・ご相談（無料）などは、TwitterのDMでご連絡下さい。</p>
+        </div>
+    </footer>
+
+    <script>
+        $(function() {
+
+           $('.toggle').click(function() {
+               $(this).toggleClass('active');
+   
+               if ($(this).hasClass('active')) {
+                   $ ('.gnav').addClass('active');
+               } else {
+                   $('.gnav').removeClass('active');
+               }
+       
+           });
+       }); 
+   
+    </script>
+</body>
+</html>
