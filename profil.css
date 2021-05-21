@@ -1,0 +1,480 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* リセットCSS */
+
+
+
+/* CSS */
+
+body {
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.conteiner {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    padding-top:50px;
+    border: 1px solid #fff;
+}
+.header {
+    width: 80%;
+}
+.header img{
+    width: 15%;
+    margin: 10px 0 10px 10px;
+}
+.header i{
+    width: 5%;
+    float: right;
+    padding-top: 15px;
+    margin-right: 5%;
+    color: rgb(123, 194, 241);
+}
+.header i:hover{
+    color: rgb(96, 113, 128);
+}
+.gnav {
+    width: 100%;
+    display: flex;
+    padding-bottom: 10px;
+}
+.gnav ul{
+    margin: 0 auto;
+}
+.gnav li{
+    list-style: none;
+    display: inline;
+    padding: 0 50px;
+    font-size: 18px;
+    border: 2px solid #fff;
+}
+.gnav a{
+    text-decoration: none;
+    color: #fff;
+}
+.gnav a:hover{
+    color: #cccccc;
+}
+/* メイン */
+.main1 {
+    width: 80%;
+    margin: 40px auto;
+}
+.loop_wrap {
+    display: flex;
+    width: 100%;
+    height: 430px;
+    overflow: hidden;
+  }
+  
+  .loop_wrap img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+  }
+  @-webkit-keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @-webkit-keyframes loop2 {
+    0% {
+      transform: translateX(200%);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+  
+  @keyframes loop2 {
+    0% {
+      transform: translateX(200%);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+ 
+  .loop_wrap img:first-child {
+    -webkit-animation: loop 10s -25s linear infinite;
+            animation: loop 10s -25s linear infinite;
+  }
+ 
+  .loop_wrap img:last-child {
+    -webkit-animation: loop2 10s linear infinite;
+            animation: loop2 10s linear infinite;
+  }
+/* セクション１ */
+.section1 {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+    /* background-color: rgb(184, 85, 85); */
+    border-bottom: 7px solid #cccccc;
+}
+#abc {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.profil {
+    display: flex;
+}
+.profil img{
+    width: 40%;
+    margin-top: 38px;
+}
+.profil p{
+    width: 55%;
+    margin-top: 190px;
+    margin-left: 48px;
+    line-height: 25px;
+    font-size: 18px;
+    color: #fff;
+}
+/* セクション２ */
+.section2 {
+    width: 80%;
+    margin: 70px auto;
+    border-bottom: 7px solid #cccccc;
+    padding-bottom: 140px;
+}
+
+#abc1 {
+    width: 30%;
+    margin: 50px auto;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+.sikil {
+    width: 100%;
+    display: flex;
+    margin-top: 120px;
+}
+.sikil1 {
+    width: 30%;
+}
+.sikil1 h3{
+    width: 95%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 37px;
+    font-size: 25px;
+    border: 2px solid #fff;
+}
+.sikil1 p{
+    width: 95%;
+    height: 154px;
+    line-height: 25px;
+    font-size: 18px;
+    color: #fff;
+    
+}
+.sikil2 {
+    width: 70%;
+    
+}
+.sikil3 {
+    width: 70%;
+    
+}
+.sikil2 img{
+    width: 95%;
+    margin-left: 40px;
+    border: 2px solid #fff;
+    margin-bottom: 70px;
+}
+.sikil3 img{
+    width: 95%;
+    margin-left: 40px;
+    border: 2px solid rgb(252, 242, 242);
+}
+/* セクション３ */
+.section3 {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 140px;
+}
+#abc2 {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+    color: rgb(250, 250, 250);
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+.works {
+    width: 100%;
+    display: flex;
+    padding-bottom: 120px;
+    border-bottom: 7px solid #cccccc;
+}
+.works1 {
+    width: 50%;
+    margin-top: 120px;
+}
+.works1 li{
+    list-style: none;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 30px;
+}
+.works1 img{
+    width: 80%;
+}
+
+/* ボタン */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-custom01 {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  border-radius: 0.75rem;
+}
+
+a.btn-custom01:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  transition: all 0.3s;
+  transform: translate3d(0, 0.75rem, -1rem);
+
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #ccc100;
+  box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-custom01:after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: 1.5rem;
+  margin: 0;
+  padding: 0;
+  content: "\f0e0";
+}
+
+.btn-custom01-front {
+  position: relative;
+  display: block;
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  transition: all 0.3s;
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #fff100;
+}
+
+.fa-position-left {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: 1rem;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 1rem;
+}
+
+a.btn-custom01:hover {
+  transform: translate(0, 0.25rem);
+  background: #fff100;
+}
+
+a.btn-custom01:hover:before {
+  transform: translate3d(0, 0.5rem, -1rem);
+  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-custom01:hover:after {
+  content: "\f2b6";
+}
+
+a.btn-custom01:active {
+  transform: translate(0rem, 0.75rem);
+}
+
+a.btn-custom01:active:before {
+  transform: translate3d(0, 0, -1rem);
+  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+a.btn-custom01:active:after {
+  content: "\f2b6";
+}
+
+.footer {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.footer p{
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
