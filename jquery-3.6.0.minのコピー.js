@@ -1,5 +1,5 @@
- <script>
-       $(function(){
+<script>
+      $(function(){
            $('.toggle').click(function() {
                $(this).toggleClass('active');
    
