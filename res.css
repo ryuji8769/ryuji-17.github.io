@@ -1,0 +1,148 @@
+/* タブレット */
+@media (max-width: 768px){
+   
+    .gnav {
+        height: 140px;
+        position: absolute;
+        top: -100%;
+        transition: 0.5s;
+        display: block;
+        width: 100%;
+        padding-top: 0;
+        background-color: rgb(250, 242, 242);
+        opacity: 0.8;
+    }
+    .gnav a{
+        color: black;
+    }
+    .gnav li {
+        border: none;
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        border-bottom: 1px solid #333;
+    }
+    .loop_wrap　{
+        z-index: 1;
+    }
+    
+    .gnav.active{
+        position: fixed;
+        top:50px;
+        z-index: 2;
+    }
+    .toggle {
+        position: fixed;
+        right: 10px;
+        top: 15px;
+        width: 20%;
+        height: 42px;
+        z-index: 3;
+    }
+    .toggle span{
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: 3px solid rgb(247, 189, 247);
+        transition: 0.3s ease-in-out;
+        left: 6px;
+    }
+    .toggle span:nth-child(1){
+        top:9px;
+    }
+    .toggle span:nth-child(2){
+        top:18px;
+    }
+    .toggle span:nth-child(3){
+        top:27px;
+    }
+    .toggle.active span:nth-child(1){
+        top:18px;
+        left:6px;
+        transform: rotate(45deg);
+    }
+    .toggle.active span:nth-child(2){
+        top:18px;
+        left:6px;
+        transform: rotate(-45deg);
+    }
+    .toggle.active span:nth-child(3){
+        top:18px;
+        left:6px;
+        transform: rotate(-45deg);
+    }
+    .footer p {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+/* スマホ */
+@media(max-width: 380px){
+    .section1 {
+        width: 100%;
+    }
+    .profil {
+        display: block;
+    }
+    .profil img{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 40px;
+        display: block;
+    }
+    .profil p{
+        width: 80%;
+    }
+    .section2 {
+        width: 100%;
+    }
+    .sikil {
+        display: block;
+    }
+    .sikil1 {
+        width: 90%;
+        margin:  0 auto;
+    }
+    .sikil2 {
+        width: 100%;
+        
+    }
+    .sikil3 {
+        width: 100%;
+        
+    }
+    .sikil2 img{
+        margin-left: 0%;
+        margin-top: 100px;
+    }
+    .sikil3 img{
+        margin-left: 0%;
+    }
+
+    .section3 {
+        width: 100%;
+    }
+    .works {
+        display: block;
+    }
+    .works1 {
+        width: 100%;
+    }
+    .works1 li{
+       width: 70%;
+    }
+    .works1 img{
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+    .footer p{
+        width: 95%;
+    }
+}
